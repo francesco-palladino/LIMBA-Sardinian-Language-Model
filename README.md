@@ -36,3 +36,19 @@ The project focuses on Limba Sarda Comuna (LSC), providing conversational capabi
 Beyond building a functional assistant, the project investigates practical workflows for dataset creation, instruction tuning, prompt engineering and evaluation in multilingual and minority-language NLP.
 
 LIMBA also serves as an educational case study demonstrating the complete lifecycle of a fine-tuned LLM, from dataset preparation to deployment on Hugging Face.
+
+
+## Features
+
+| Feature | Status |
+|---------|:------:|
+| Italian → Limba Sarda Comuna (LSC) Translation | ✅ |
+| Limba Sarda Comuna (LSC) → Italian Translation | ✅ |
+| Conversational AI | ✅ |
+| Sardinian Text Generation | ✅ |
+| Fine-tuned Llama 3.1 | ✅ |
+| Parameter-Efficient Fine-Tuning (LoRA) | ✅ |
+| Unsloth Training Pipeline | ✅ |
+| GGUF Export | ✅ |
+| Hugging Face Model | ✅ |
+| Hugging Face Spaces Demo | ✅ |
