@@ -27,6 +27,13 @@ An interactive demo is available through Hugging Face Spaces:
 This GitHub repository contains the project documentation, training workflow, code, dataset samples, evaluation materials and usage examples.
 
 
+## Demo Preview
+
+[![LIMBA 2.0 interactive demo](assets/limba-demo.png)](https://huggingface.co/spaces/FPll/Limba_2.0)
+
+*LIMBA 2.0 running on Hugging Face Spaces. Click the image to open the interactive demo.*
+
+
 ## Project Overview
 
 LIMBA was created to explore how Large Language Models can be adapted to support a low-resource language through parameter-efficient fine-tuning.
