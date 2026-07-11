@@ -98,3 +98,38 @@ LIMBA was fine-tuned using a parameter-efficient training workflow based on Unsl
 | Model Repository | Hugging Face Hub |
 | Primary Language | Limba Sarda Comuna (LSC) |
 | Secondary Language | Italian |
+
+## Try LIMBA
+
+### Interactive demo
+
+LIMBA can be tested directly through its Hugging Face Spaces interface:
+
+[Launch the LIMBA 2.0 interactive demo](https://huggingface.co/spaces/FPll/Limba_2.0)
+
+The demo provides:
+
+- conversational interaction in Italian and Limba Sarda Comuna;
+- Italian–Sardinian translation;
+- Sardinian text generation;
+- educational explanations;
+- basic programming assistance;
+- lightweight retrieval from Sardinian and Italian Wikipedia.
+
+### Model repository
+
+The quantized GGUF model is available on Hugging Face Hub:
+
+[View the LIMBA model repository](https://huggingface.co/FPll/limba-mentor-llama3-gguf)
+
+### Repository contents
+
+This GitHub repository includes:
+
+- the public training notebook;
+- the Gradio inference application;
+- runtime and training dependencies;
+- a curated dataset sample;
+- training methodology;
+- example prompts;
+- technical and deployment documentation.
