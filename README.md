@@ -209,3 +209,33 @@ The model is downloaded automatically from the LIMBA repository on Hugging Face 
 The public GGUF model normally does not require authentication. If authentication is needed, define the `HF_TOKEN` environment variable before running the script.
 
 Never store Hugging Face tokens directly inside source-code files or notebooks.
+
+
+## Dataset Quality Assurance
+
+The repository includes a validation utility for checking instruction-tuning datasets before training.
+
+The script verifies:
+
+- JSONL syntax;
+- required `instruction`, `context` and `response` fields;
+- correct data types;
+- empty instructions or responses;
+- unexpected fields;
+- leading or trailing spaces;
+- duplicate instruction–response pairs.
+
+Run the validator with:
+
+```bash
+python scripts/validate_dataset.py data/sample_dataset.jsonl
+```
+
+A successful validation returns:
+
+```text
+Records checked: 60
+Dataset validation completed successfully.
+```
+
+This validation step supports dataset consistency, reproducibility and quality control throughout the fine-tuning workflow.
