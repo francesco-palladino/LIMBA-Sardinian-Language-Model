@@ -1,4 +1,4 @@
-# LIMBA — Sardinian Language Model
+# LIMBA 2.0 — Sardinian Language Model
 [![Validate dataset](https://github.com/francesco-palladino/LIMBA-Sardinian-Language-Model/actions/workflows/validate-dataset.yml/badge.svg)](https://github.com/francesco-palladino/LIMBA-Sardinian-Language-Model/actions/workflows/validate-dataset.yml)
 
 **Built with Llama**
@@ -21,7 +21,7 @@ LIMBA was developed as an experimental project focused on Sardinian language tec
 
 The LIMBA model is hosted on Hugging Face:
 
-[View the LIMBA model on Hugging Face](https://huggingface.co/FPll/limba-mentor-llama3-gguf)
+[View the LIMBA model on Hugging Face](https://huggingface.co/FPll/Llama-LIMBA-2.0-GGUF)
 
 An interactive demo is available through Hugging Face Spaces:
 
@@ -135,7 +135,7 @@ The demo provides:
 
 The quantized GGUF model is available on Hugging Face Hub:
 
-[View the LIMBA model repository](https://huggingface.co/FPll/limba-mentor-llama3-gguf)
+[View the LIMBA model repository](https://huggingface.co/FPll/Llama-LIMBA-2.0-GGUF)
 
 ### Repository contents
 
