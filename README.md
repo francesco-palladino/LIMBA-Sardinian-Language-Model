@@ -165,7 +165,7 @@ LIMBA can be run locally through the command-line inference script included in t
 Clone the repository:
 
 ```bash
-git clone https://github.com/FPll/LIMBA-Sardinian-Language-Model.git
+git clone https://github.com/francesco-palladino/LIMBA-Sardinian-Language-Model.git
 cd LIMBA-Sardinian-Language-Model
 ```
 
