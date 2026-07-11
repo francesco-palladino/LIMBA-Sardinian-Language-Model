@@ -52,3 +52,18 @@ LIMBA also serves as an educational case study demonstrating the complete lifecy
 | GGUF Export | ✅ |
 | Hugging Face Model | ✅ |
 | Hugging Face Spaces Demo | ✅ |
+
+
+## Technical Architecture
+
+| Component | Technology |
+|----------|------------|
+| Base Model | Meta Llama 3.1 |
+| Fine-Tuning | LoRA (Low-Rank Adaptation) |
+| Training Framework | Unsloth |
+| Inference Format | GGUF |
+| Interface | Gradio |
+| Deployment | Hugging Face Spaces |
+| Model Repository | Hugging Face Hub |
+| Primary Language | Limba Sarda Comuna (LSC) |
+| Secondary Language | Italian |
