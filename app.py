@@ -5,7 +5,7 @@ Gradio interface for a fine-tuned Llama 3.1 model supporting Italian and
 Limba Sarda Comuna (LSC), with lightweight Wikipedia retrieval.
 
 Model weights are downloaded from:
-    FPll/limba-mentor-llama3-gguf
+    FPll/Llama-LIMBA-2.0-GGUF
 
 Environment variables:
     HF_TOKEN: Hugging Face access token used by InferenceClient and
@@ -34,7 +34,7 @@ import wikipedia
 wikipedia.set_lang("it")
 hf_client = InferenceClient(token=os.environ.get("HF_TOKEN"))
 
-REPO_ID = "FPll/limba-mentor-llama3-gguf"
+REPO_ID = "FPll/Llama-LIMBA-2.0-GGUF"
 FILENAME = "Meta-Llama-3.1-8B.Q4_K_M.gguf"
 
 # Scarica il file GGUF nella cache della Space
