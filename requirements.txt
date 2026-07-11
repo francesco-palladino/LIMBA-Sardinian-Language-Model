@@ -1,8 +1,4 @@
-torch
-transformers
-llama-cpp-python
 gradio
 huggingface_hub
-sentencepiece
-accelerate
-unsloth
+llama-cpp-python
+wikipedia
