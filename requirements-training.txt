@@ -1,0 +1,10 @@
+torch
+unsloth
+transformers
+datasets
+trl
+peft
+accelerate
+bitsandbytes
+xformers
+huggingface_hub
