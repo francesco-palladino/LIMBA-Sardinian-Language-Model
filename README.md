@@ -25,3 +25,14 @@ An interactive demo is available through Hugging Face Spaces:
 [Try the LIMBA interactive demo](https://huggingface.co/spaces/FPll/Limba_2.0)
 
 This GitHub repository contains the project documentation, training workflow, code, dataset samples, evaluation materials and usage examples.
+
+
+## Project Overview
+
+LIMBA was created to explore how Large Language Models can be adapted to support a low-resource language through parameter-efficient fine-tuning.
+
+The project focuses on Limba Sarda Comuna (LSC), providing conversational capabilities, bidirectional translation between Italian and Sardinian, and natural language generation while preserving linguistic consistency.
+
+Beyond building a functional assistant, the project investigates practical workflows for dataset creation, instruction tuning, prompt engineering and evaluation in multilingual and minority-language NLP.
+
+LIMBA also serves as an educational case study demonstrating the complete lifecycle of a fine-tuned LLM, from dataset preparation to deployment on Hugging Face.
