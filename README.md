@@ -239,4 +239,50 @@ Records checked: 60
 Dataset validation completed successfully.
 ```
 
+
+## Repository Structure
+
+```text
+LIMBA-Sardinian-Language-Model/
+├── .github/
+│   └── workflows/
+│       └── validate-dataset.yml
+├── assets/
+│   ├── README.md
+│   └── limba-demo.png
+├── data/
+│   ├── README.md
+│   └── sample_dataset.jsonl
+├── docs/
+│   ├── evaluation.md
+│   ├── limitations.md
+│   └── training-methodology.md
+├── examples/
+│   └── example-prompts.md
+├── notebooks/
+│   ├── README.md
+│   └── LIMBA_2.0_training_public.ipynb
+├── scripts/
+│   └── validate_dataset.py
+├── .env.example
+├── .gitignore
+├── app.py
+├── inference.py
+├── README.md
+├── requirements.txt
+└── requirements-training.txt
+```
+
+### Main components
+
+- `app.py` — Gradio application deployed on Hugging Face Spaces, including conversational history and Wikipedia-assisted retrieval.
+- `inference.py` — lightweight command-line interface for local GGUF inference.
+- `notebooks/` — public Unsloth and LoRA fine-tuning workflow.
+- `data/` — dataset documentation and curated public sample.
+- `scripts/` — dataset validation and quality-assurance utilities.
+- `docs/` — methodology, evaluation and responsible-use documentation.
+- `examples/` — representative prompts for testing model capabilities.
+- `assets/` — screenshots and visual project resources.
+- `.github/workflows/` — automated dataset validation through GitHub Actions.
+
 This validation step supports dataset consistency, reproducibility and quality control throughout the fine-tuning workflow.
