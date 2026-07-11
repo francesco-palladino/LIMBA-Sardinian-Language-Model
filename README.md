@@ -1,4 +1,5 @@
 # LIMBA — Sardinian Language Model
+[![Validate dataset](https://github.com/francesco-palladino/LIMBA-Sardinian-Language-Model/actions/workflows/validate-dataset.yml/badge.svg)](https://github.com/francesco-palladino/LIMBA-Sardinian-Language-Model/actions/workflows/validate-dataset.yml)
 
 LIMBA is a fine-tuned Llama 3.1 language model designed to work with Italian and Limba Sarda Comuna (LSC).
 
