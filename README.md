@@ -63,6 +63,37 @@ LIMBA also serves as an educational case study demonstrating the complete lifecy
 | Training Framework | Unsloth |
 | Inference Format | GGUF |
 | Interface | Gradio |
+
+## Training Pipeline
+
+LIMBA was fine-tuned using a parameter-efficient training workflow based on Unsloth and LoRA.
+
+### Main configuration
+
+| Parameter | Value |
+|---|---|
+| Base model | Meta Llama 3.1 8B |
+| Training framework | Unsloth |
+| Fine-tuning method | LoRA |
+| Quantized loading | 4-bit |
+| Context length | 4096 tokens |
+| LoRA rank | 32 |
+| LoRA alpha | 64 |
+| Training epochs | 3 |
+| Learning rate | 2e-4 |
+| Optimizer | AdamW 8-bit |
+| Export format | GGUF Q4_K_M |
+
+### Workflow
+
+1. Load the quantized base model.
+2. Configure LoRA adapters.
+3. Prepare and format the instruction dataset.
+4. Fine-tune the model with supervised training.
+5. Test the model before and after fine-tuning.
+6. Export the trained model to GGUF format.
+7. Publish the model on Hugging Face Hub.
+8. Deploy the conversational interface through Hugging Face Spaces.
 | Deployment | Hugging Face Spaces |
 | Model Repository | Hugging Face Hub |
 | Primary Language | Limba Sarda Comuna (LSC) |
