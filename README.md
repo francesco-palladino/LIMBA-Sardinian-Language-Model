@@ -65,12 +65,20 @@ LIMBA also serves as an educational case study demonstrating the complete lifecy
 ## Technical Architecture
 
 | Component | Technology |
-|----------|------------|
-| Base Model | Meta Llama 3.1 |
+|---|---|
+| Base Model | Meta Llama 3.1 8B |
 | Fine-Tuning | LoRA (Low-Rank Adaptation) |
 | Training Framework | Unsloth |
-| Inference Format | GGUF |
+| Quantized Loading | 4-bit |
+| Context Length | 4096 tokens |
+| Inference Format | GGUF Q4_K_M |
+| Inference Engine | llama.cpp |
 | Interface | Gradio |
+| Retrieval | Sardinian and Italian Wikipedia |
+| Deployment | Hugging Face Spaces |
+| Model Repository | Hugging Face Hub |
+| Primary Language | Limba Sarda Comuna (LSC) |
+| Secondary Language | Italian |
 
 ## Training Pipeline
 
@@ -102,10 +110,7 @@ LIMBA was fine-tuned using a parameter-efficient training workflow based on Unsl
 6. Export the trained model to GGUF format.
 7. Publish the model on Hugging Face Hub.
 8. Deploy the conversational interface through Hugging Face Spaces.
-| Deployment | Hugging Face Spaces |
-| Model Repository | Hugging Face Hub |
-| Primary Language | Limba Sarda Comuna (LSC) |
-| Secondary Language | Italian |
+
 
 ## Try LIMBA
 
@@ -147,11 +152,13 @@ This GitHub repository includes:
 
 LIMBA can be run locally through the command-line inference script included in this repository.
 
+
 ### Requirements
 
 - Python 3.10 or later
 - Enough RAM to load the quantized 8B GGUF model
 - Internet access during the first run to download the model from Hugging Face Hub
+
 
 ### Installation
 
@@ -205,6 +212,7 @@ python inference.py \
 
 The model is downloaded automatically from the LIMBA repository on Hugging Face Hub during the first execution.
 
+
 ### Hugging Face authentication
 
 The public GGUF model normally does not require authentication. If authentication is needed, define the `HF_TOKEN` environment variable before running the script.
@@ -238,7 +246,6 @@ A successful validation returns:
 Records checked: 60
 Dataset validation completed successfully.
 ```
-
 
 ## Repository Structure
 
