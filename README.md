@@ -140,3 +140,72 @@ This GitHub repository includes:
 - training methodology;
 - example prompts;
 - technical and deployment documentation.
+
+
+## Local Inference
+
+LIMBA can be run locally through the command-line inference script included in this repository.
+
+### Requirements
+
+- Python 3.10 or later
+- Enough RAM to load the quantized 8B GGUF model
+- Internet access during the first run to download the model from Hugging Face Hub
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/FPll/LIMBA-Sardinian-Language-Model.git
+cd LIMBA-Sardinian-Language-Model
+```
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+On Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+On Linux or macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the runtime dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run LIMBA
+
+```bash
+python inference.py --prompt "Traduci in sardo: La tecnologia può aiutare a preservare le lingue minoritarie."
+```
+
+Optional generation parameters:
+
+```bash
+python inference.py \
+  --prompt "Scrivi un breve testo in LSC sulla tutela dell'ambiente." \
+  --max-tokens 512 \
+  --temperature 0.1 \
+  --context-length 4096 \
+  --threads 4
+```
+
+The model is downloaded automatically from the LIMBA repository on Hugging Face Hub during the first execution.
+
+### Hugging Face authentication
+
+The public GGUF model normally does not require authentication. If authentication is needed, define the `HF_TOKEN` environment variable before running the script.
+
+Never store Hugging Face tokens directly inside source-code files or notebooks.
