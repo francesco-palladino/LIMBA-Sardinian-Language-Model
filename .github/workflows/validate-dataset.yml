@@ -1,0 +1,33 @@
+name: Validate dataset
+
+on:
+  push:
+    paths:
+      - "data/sample_dataset.jsonl"
+      - "scripts/validate_dataset.py"
+      - ".github/workflows/validate-dataset.yml"
+
+  pull_request:
+    paths:
+      - "data/sample_dataset.jsonl"
+      - "scripts/validate_dataset.py"
+      - ".github/workflows/validate-dataset.yml"
+
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate JSONL dataset
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Run dataset validation
+        run: python scripts/validate_dataset.py data/sample_dataset.jsonl
