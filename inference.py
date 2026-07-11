@@ -16,7 +16,7 @@ from huggingface_hub import hf_hub_download
 from llama_cpp import Llama
 
 
-REPO_ID: Final[str] = "FPll/limba-mentor-llama3-gguf"
+REPO_ID: Final[str] = "FPll/Llama-LIMBA-2.0-GGUF"
 MODEL_FILENAME: Final[str] = "Meta-Llama-3.1-8B.Q4_K_M.gguf"
 
 SYSTEM_PROMPT: Final[str] = (
